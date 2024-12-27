@@ -14,8 +14,10 @@ int main() {
     RingBuffer_write(rb, "aa", 2);
 
     char* data = malloc(2 * sizeof(char));
-     RingBuffer_read(rb, data, 2);
+    RingBuffer_read(rb, data, 2);
+
     printf("read: %s\n", data);
+
     RingBuffer_free(rb);
 }
 ```
